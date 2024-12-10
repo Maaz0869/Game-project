@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('./1.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.game-container {
+    text-align: center;
+}
+
+#board {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(rgb(37, 210, 14), rgb(53, 113, 63));
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    border: 2px solid black;
+    margin: 20px auto;
+    position: relative;
+}
+
+#scoreBox {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#startButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.head {
+    background: linear-gradient(to right, black, black);
+   
+    border-radius: 30%;
+}
+
+.snake {
+    background: #fa2201;
+    border: 1px solid rgba(52, 102, 160, 0.673);
+    border-radius: 100%;
+}
+
+.food {
+    background: radial-gradient(circle, red, purple);
+    border-radius: 50%;
+}
